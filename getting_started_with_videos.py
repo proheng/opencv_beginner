@@ -1,8 +1,11 @@
 import datetime
 import cv2
 
+
+# create a video capture object
 cap = cv2.VideoCapture(0)
 
+# set the width and height, and brightness of the capture
 out = cv2.VideoWriter("output.avi", cv2.VideoWriter_fourcc(
     *"XVID"), 20.0, (1920, 1080))
 
